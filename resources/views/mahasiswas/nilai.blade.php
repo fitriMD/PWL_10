@@ -34,7 +34,10 @@
     @endforeach
     @endif
 </table>
-<div class="row justify-content-end">
+<div class="float-right my-2">
+    <a href="{{ route('mahasiswas.cetak_pdf', $mahasiswa->mahasiswa->Nim) }}" class="btn btn-warning">Cetak PDF</a>
+    </div>
+<div class="float-left my-2">
     <a href="{{ route('mahasiswas.index') }}" class="btn btn-danger">Kembali</a>
 </div>
 @endsection
